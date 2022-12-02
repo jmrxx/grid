@@ -1,0 +1,51 @@
+// grid area
+#item-a{grid-area: a;}
+#item-b{grid-area: b;}
+#item-c{grid-area: c;}
+#item-d{grid-area: d;}
+#item-e{grid-area:e ;}
+#item-f{grid-area:f ;}
+#item-g{grid-area:g ;}
+
+.grid-6{
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 150px);
+    grid-template-areas: 
+    "a b"
+    "c d"
+    "c d";
+
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #444444;
+    color: #fff;
+}
+.box-grid{
+    background-color: #444444;
+    padding: 15px;
+}
+
+#item-d{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "e e"
+    "f g";
+
+    .fil{
+        font-weight: bold;
+        border-radius: 5px;
+        padding-left: 10px;
+        font-size: 2rem;
+        background-color: #cccccc;
+        color: #444444;
+    }
+}

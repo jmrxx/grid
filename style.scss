@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    column-gap: 10px;
+    height: 100vh;
+}
+
+@import './E01_grid/E01_grid';
+@import './E02_grid/E02_grid';
+@import './E03_grid/E03_grid';
+@import './E04_grid/E04_grid';
+@import './E05_grid/E05_grid';
+@import './E06_grid/E06_grid';
+@import './E07_grid/E07_grid';

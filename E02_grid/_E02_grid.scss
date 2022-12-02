@@ -1,0 +1,24 @@
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(2, 100px);
+    gap: 10px;
+}
+
+.item-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #444444;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+#item2-a{
+    grid-column: span 2;
+}
+
+#item2-b{
+    grid-row: span 2;
+}

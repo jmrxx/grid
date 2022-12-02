@@ -1,0 +1,363 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  height: 100vh;
+}
+
+.title {
+  padding: 10px;
+}
+
+.grid {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
+  gap: 10px;
+}
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #444444;
+  color: #fff;
+  border-radius: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
+  gap: 10px;
+}
+
+.item-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #444444;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+
+#item2-a {
+  grid-column: span 2;
+}
+
+#item2-b {
+  grid-row: span 2;
+}
+
+#item3-a {
+  grid-area: a;
+}
+
+#item3-b {
+  grid-area: b;
+}
+
+#item3-c {
+  grid-area: c;
+}
+
+#item3-d {
+  grid-area: d;
+}
+
+#item3-e {
+  grid-area: e;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  grid-template-areas: "a . b" "c d d" "e e e";
+}
+
+.item3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #444444;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+
+/* Grid areas*/
+#header {
+  grid-area: header;
+}
+
+#main {
+  grid-area: main;
+}
+
+#sidebar {
+  grid-area: sidebar;
+}
+
+#footer {
+  grid-area: footer;
+}
+
+.grid-4 {
+  width: 30%;
+  height: 400px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border: 1px solid #000;
+  gap: 10px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  grid-template-areas: ". header header" "sidebar main main" "footer footer footer";
+}
+
+.item-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid rgba(119, 113, 113, 0.267);
+  font-size: 2rem;
+  padding-left: 20px;
+  color: #fff;
+}
+
+#header {
+  background-color: #999999;
+}
+
+#main {
+  background-color: #444444;
+  height: 200px;
+}
+
+#sidebar {
+  background-color: #444444;
+}
+
+#footer {
+  background-color: #999999;
+}
+
+#header {
+  grid-area: header;
+}
+
+#sidebar {
+  grid-area: sidebar;
+}
+
+.grid-5 {
+  width: 30%;
+  padding: 20px;
+  height: 300px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "header header ." "sidebar . .";
+}
+
+.item-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.overlay {
+  width: 17%;
+  position: absolute;
+  background-color: red;
+  height: 270px;
+  right: 700px;
+}
+
+#item-a {
+  grid-area: a;
+}
+
+#item-b {
+  grid-area: b;
+}
+
+#item-c {
+  grid-area: c;
+}
+
+#item-d {
+  grid-area: d;
+}
+
+#item-e {
+  grid-area: e;
+}
+
+#item-f {
+  grid-area: f;
+}
+
+#item-g {
+  grid-area: g;
+}
+
+.grid-6 {
+  display: grid;
+  gap: 10px;
+  padding: 20px;
+  grid-template-columns: repeat(2, 200px);
+  grid-template-rows: repeat(2, 150px);
+  grid-template-areas: "a b" "c d" "c d";
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  background-color: #444444;
+  color: #fff;
+}
+
+.box-grid {
+  background-color: #444444;
+  padding: 15px;
+}
+
+#item-d {
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "e e" "f g";
+}
+#item-d .fil {
+  font-weight: bold;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 2rem;
+  background-color: #cccccc;
+  color: #444444;
+}
+
+#item7-a {
+  grid-area: a;
+}
+
+#item7-b {
+  grid-area: b;
+}
+
+#item7-c {
+  grid-area: c;
+}
+
+#item7-d {
+  grid-area: d;
+}
+
+#item7-e {
+  grid-area: e;
+}
+
+#item7-f {
+  grid-area: f;
+}
+
+.grid-7 {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 10px;
+  grid-template-areas: "a a b e" "c d b e";
+}
+
+.item-7 {
+  background-color: #444444;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#item7-f {
+  display: none;
+}
+
+@media screen and (max-width: 400px) {
+  .grid-7 {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    gap: 10px;
+    grid-template-areas: "d a" "e b" "f c";
+  }
+  .grid-7 #item7-f {
+    display: block;
+  }
+}
